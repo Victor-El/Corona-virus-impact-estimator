@@ -8,6 +8,7 @@ html {
 body {
     --color-primary: gray;
     --color-accent: rgb(233, 74, 74);
+    --color-input: #000000;
 
     height: 100%;
     width: 100%;
@@ -23,7 +24,7 @@ body {
 }
 
 input {
-    color: var(--color-primary);
+    color: var(--color-input);
 }
 
 form {
