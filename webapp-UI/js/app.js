@@ -1,7 +1,7 @@
 /* eslint-disable no-alert */
 /* eslint-disable no-console */
 // eslint-disable-next-line import/extensions
-import estimator from '../estimator.js';
+import estimator from './estimator.js';
 
 const form = document.getElementById('main-form');
 const resultDiv = document.getElementById('est-view');
