@@ -1,0 +1,78 @@
+
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    --color-primary: gray;
+    --color-accent: rgb(233, 74, 74);
+
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: rgb(48, 45, 45);
+    background-image: url(../images/corona.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+input {
+    color: var(--color-primary);
+}
+
+form {
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: rgb(44, 40, 40);
+}
+#est-view {
+    color: whitesmoke;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: rgb(44, 40, 40);
+}
+
+.basic-margin-tb-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 25px;
+    color: var(--color-accent);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#est-btn {
+    color: var(--color-accent);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media(min-width: 550px) {
+    h1 {
+        font-size: 5rem;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="corona, covid-19, disease, coronavirus, corona virus, impact, severe, estimate, estimator">
+    <meta name="description" content="A tools that helps people access or estimate impact of corona virus or covid-19 disease">
+    <title>Corona Virus Impact Estimator</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+    <header>
+        <h1>Corona Virus Impact Estimator</h1>
+        <div class="row">
+            <div class="six columns basic-margin-tb-30">
+                <form id="main-form" name="main-form">
+                    <input class="u-full-width" type="text" placeholder="Name of location" id="name" required>
+                    <input class="u-full-width" type="number" placeholder="Average age" id="avg-age" required>
+                    <input class="u-full-width" type="number" placeholder="Average daily income in USD" id="avg-daily-inc-usd" required>
+                    <input class="u-full-width" type="number" placeholder="Average daily income population" id="avg-daily-inc-pop" required>
+                    <input class="u-full-width" type="number" placeholder="Population" id="population" data-population required>
+                    <input class="u-full-width" type="number" placeholder="Time to elapse / Period" id="elapse" data-time-to-elapse required>
+                    <input class="u-full-width" type="number" placeholder="Reported cases" id="reported" data-reported-cases required>
+                    <input class="u-full-width" type="number" placeholder="Total hospital beds" id="hospital-beds" data-total-hospital-beds required>
+                    <select class="u-full-width" name="periodType" id="period-type" data-period-type>
+                        <option value="select" required>Select a period type</option>
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                        <option value="months">Months</option>
+                    </select>
+                    <input id="est-btn" type="submit" value="Estimate" data-go-estimate>
+                </form>
+            </div>
+
+            <div class="six columns basic-margin-tb-30">
+
+                <div id="est-view" class="u-full-width">
+                    Estimated values will be shown here.
+                </div>
+
+            </div>
+        </div>
+    </header>
+    
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
