@@ -116,6 +116,7 @@ form.addEventListener('submit', (e) => {
   resultDiv.innerHTML = '';
   resultDiv.appendChild(impactDiv);
   form.reset();
+  resultDiv.scrollIntoView();
 });
 
 // const result = estimator({
