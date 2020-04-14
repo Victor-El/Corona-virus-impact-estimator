@@ -9,6 +9,7 @@ body {
     --color-primary: gray;
     --color-accent: rgb(233, 74, 74);
     --color-input: #000000;
+    --color-label: #FFFFFF;
 
     height: 100%;
     width: 100%;
@@ -25,6 +26,10 @@ body {
 
 input {
     color: var(--color-input);
+}
+
+label {
+  color: var(--color-label);
 }
 
 form {
